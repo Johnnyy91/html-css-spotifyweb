@@ -5,8 +5,7 @@
 }
 
 body{
-    font-family: sans-serif;
-    height: 1200px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -32,6 +31,22 @@ img{
     color: white;
 }
 
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:100vh; 
+}
+
+aside li{
+    line-height: 2;
+    list-style: none;
+}
+
+.logo-list{
+    padding: 10px;
+}
+
 
 
 /*HEADER*/
@@ -53,7 +68,7 @@ button{
 /*MAIN*/
 
 main{
-    width: 100%;
+    width: 100% -aside;
     background-color: #141922;
     color: white;
     padding: 0 15px;
@@ -80,7 +95,7 @@ h6{
 }
 
 .card-album{
-    width: 50%;
+    width: calc(100% / 6);
     padding: 0 15px;
     text-align: center;
 }
@@ -94,8 +109,25 @@ h2{
 
 footer{
     background-color: #282828;
-    height: 50px;
 }
+
+.section-end{
+    display: flex;
+    justify-content: space-between;
+}
+
+.end1 img{
+    width: 20%;
+    padding: 20px;
+}
+
+/*
+.end1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
 
 
 
