@@ -24,8 +24,6 @@ img{
 /*ASIDE*/
 
 .start{
-    flex-direction: column;
-    justify-content: space-around;
     background-color: black;
     color: lightslategray;
 }
@@ -72,24 +70,30 @@ nav{
 
 nav a{
     text-decoration: none;
-    color: black;
+    color: #a3a3a3;
     padding: 10px;
 }
 
 h6{
-    color: blue;
+    color: #a3a3a3;
+    padding: 10px 0;
 }
 
 .card-album{
     width: 50%;
     padding: 0 15px;
+    text-align: center;
+}
+
+h2{
+    padding: 20px 0;
 }
 
 
 /*FOOTER*/
 
 footer{
-    background-color: grey;
+    background-color: #282828;
     height: 50px;
 }
 
