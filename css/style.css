@@ -36,6 +36,7 @@ aside{
     flex-direction: column;
     justify-content: space-between;
     height:100%; 
+    width: 150px;
 }
 
 .logo-list img{
@@ -51,6 +52,12 @@ aside li{
     padding: 10px;
 }
 
+.logo-list .small{
+    display: none;
+    padding-bottom: 15px;
+    width: 20%;
+}
+
 h4{
     padding: 30px 0;
 }
@@ -63,6 +70,10 @@ p{
     padding: 10px 0;
 }
 
+.principal{
+    overflow-y: auto;
+    height: calc(100vh - 100px);
+}
 
 
 /*HEADER*/
@@ -84,7 +95,7 @@ button{
 /*MAIN*/
 
 main{
-    width: 100% -aside;
+    width: 100%;
     background-color: #141922;
     color: white;
     padding: 0 15px;
@@ -93,6 +104,7 @@ main{
 
 .flex{
     display: flex;
+    flex-wrap: wrap;
 }
 
 nav{
@@ -125,6 +137,7 @@ h2{
 
 footer{
     background-color: #282828;
+    height: 100px;
 }
 
 .section-end{
@@ -147,17 +160,16 @@ footer{
     color: #a3a3a3;
     padding: 0 5px;
 }
-/*
+
 .end1>*{
-    margin-right: 15px;
     padding-right: 10px;
-} */
+} 
 
 .end2 .icon{
     padding: 10px 0;
 }
 .bar{
-    width: 300px;
+    width: 350px;
     height: 5px;
     background-color: #a3a3a3;
     border-radius: 25px;
@@ -185,11 +197,13 @@ footer{
     flex-direction: column;
     align-items: center;
     align-self: center;
+    padding: 0 20px;
 }
 
 .end3{
     display: flex;
     align-items: center;
+    padding: 0 20px;
 }
 
 .end3 span{
@@ -197,5 +211,37 @@ footer{
     padding: 0 5px;
 }
 
+/*MEDIA*/
+
+@media screen and (max-width:950px){
+  .card-album{
+    width: calc(100% / 4);
+  }
+  
+}
+
+
+@media screen and (max-width:650px){
+    .card-album{
+        width: calc(100% / 2);
+    }
+    
+}
+
+
+@media screen and (max-width:480px){
+    .card-album{
+        width: calc(100% / 2);
+    }
+
+    .logo-list img{
+        display: none;
+    }
+
+    .logo-list .small{
+        display: block;
+    }
+    
+}
 
 
