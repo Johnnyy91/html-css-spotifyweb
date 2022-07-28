@@ -27,10 +27,6 @@ img{
     color: lightslategray;
 }
 
-.dif-white{
-    color: white;
-}
-
 aside{
     display: flex;
     flex-direction: column;
@@ -168,6 +164,7 @@ footer{
 .end2 .icon{
     padding: 10px 0;
 }
+
 .bar{
     width: 350px;
     height: 5px;
@@ -241,7 +238,15 @@ footer{
     .logo-list .small{
         display: block;
     }
+
+    .logo-list li:not(span){
+        display: none;
+    }
+
     
+
+    
+  
 }
 
 
