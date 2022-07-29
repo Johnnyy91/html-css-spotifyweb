@@ -134,15 +134,12 @@ h2{
 footer{
     background-color: #282828;
     height: 100px;
-}
-
-.section-end{
     display: flex;
     justify-content: space-between;
 }
 
 .end1 img{
-    width: 20%;
+    width: 80px;
     padding: 20px;
 }
 
@@ -150,6 +147,7 @@ footer{
 .end1{
     display: flex;
     align-items: center;
+    width: 20%;
 }
 
 .end1 span{
@@ -158,35 +156,44 @@ footer{
 }
 
 .end1>*{
-    padding-right: 10px;
+    padding-right: 5px;
 } 
 
 .end2 .icon{
     padding: 10px 0;
 }
 
+.end2 .icon:first-child{
+    width: 165px;
+}
+
 .bar{
-    width: 350px;
+    width: 60%;
     height: 5px;
     background-color: #a3a3a3;
     border-radius: 25px;
 }
 
 .small-bar{
-    width: 50px;
+    width: 20%;
     height: 5px;
     background-color: white;
     border-radius: 25px;
 }
 
+.icon{
+    display: flex;
+    justify-content: space-between;
+}
+
 .icon i{
     color: white;
     font-size: 20px;
-    padding: 0 15px;
+    /* padding: 0 15px; */
 }
 
 .end3 .bar{
-    width: 150px;
+    width: 100%;
 }
 
 .end2{
@@ -195,12 +202,14 @@ footer{
     align-items: center;
     align-self: center;
     padding: 0 20px;
+    width: 60%;
 }
 
 .end3{
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    column-gap: 1vw;
+    width: 20%;
 }
 
 .end3 span{
@@ -239,7 +248,7 @@ footer{
         display: block;
     }
 
-    .logo-list li:not(span){
+    .logo-list p{
         display: none;
     }
 
