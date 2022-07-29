@@ -193,7 +193,7 @@ footer{
 }
 
 .end3 .bar{
-    width: 100%;
+    width: 60%;
 }
 
 .end2{
@@ -249,6 +249,10 @@ footer{
     }
 
     .logo-list p{
+        display: none;
+    }
+
+    .logo-list ul:not(li >span){
         display: none;
     }
 
