@@ -122,6 +122,20 @@ h6{
     width: calc(100% / 6);
     padding: 0 15px;
     text-align: center;
+    position: relative; 
+}
+
+.around i{
+    color: white;
+    border-radius: 25px;
+    border: 5px solid white;
+    padding: 3px 9px;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
 }
 
 h2{
@@ -218,6 +232,10 @@ footer{
   .card-album{
     width: calc(100% / 4);
   }
+
+  footer >*{
+    margin: 0 30px;
+}
   
 }
 
@@ -225,6 +243,10 @@ footer{
 @media screen and (max-width:650px){
     .card-album{
         width: calc(100% / 2);
+    }
+
+    footer >*{
+        margin: 0 25px;
     }
     
 }
@@ -254,6 +276,10 @@ footer{
     .instal .invisible{
         display: none;
     }
+
+    footer >*{
+        margin: 0 20px;
+    }
       
 }
 
@@ -264,6 +290,25 @@ nav a:hover{
     border-bottom: 1px solid yellowgreen;
 }
 
-aside:hover{
-    
+aside .invisible:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.card-album:hover{
+
+}
+
+footer .end1, .end2, .end3{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.card-album:hover .around i{
+    display: block;
+    cursor: pointer;
+}
+
+.small-bar:hover{
+    background-color: greenyellow;
 }
